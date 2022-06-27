@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.loader {
+  z-index: 100;
+  position: fixed;
+  background-color: #000;
+  background-image: url("../assets/loader.gif");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+#navs {
+  position: relative;
+  margin-right: 50px;
+  /* background-color: #454441;
+  border-radius: 15px; */
+}
+
+#title {
+  display: flex;
+  height: 56px;
+  overflow: hidden;
+}
+
+@keyframes move {
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-59px);
+  }
+}
+
+#wrapper {
+  width: max-content;
+  height: 100%;
+  -webkit-animation: move 10s ease-in-out infinite alternate;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+.i-item {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 46px;
+  font-weight: bold;
+  color: #ffbc00;
+  padding-top: 5px;
+}
+
+#about {
+  /* position: absolute; */
+  height: 80vh;
+  top: 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 75%,
+      #000 100%
+    ),
+    url("../assets/bg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* #Card {
+  border-radius: 8px;
+  width: 350px;
+  height: 500px;
+  background-color: rgba(192, 192, 192, 0.816);
+} */
+
+#noso {
+  font-weight: 700;
+  font-size: 46px;
+}
+
+#downBtn {
+  background-color: #ffbc00 !important;
+  color: #040404;
+  font-size: 20px;
+}
+
+#highlight {
+  color: #ffbc00;
+  font-weight: 700;
+}
+
+#shortText {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+#aboutText {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#btnFoglal {
+  height: 40px;
+  color: #040404;
+  background-color: rgb(235, 235, 235);
+  transition: 0.4s;
+}
+
+#btnRef {
+  height: 40px;
+  color: #464646;
+  margin-left: 35px;
+  background-color: #ffbc00;
+  transition: 0.8s;
+}
+
+#btnRef:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+#btnFoglal:hover {
+  background-color: #ffbc00;
+}
+
+a {
+  text-decoration: none;
+  color: #464646;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #464646;
+}
+
+#foglText {
+  /* border-bottom: 1px solid #ffbc00;
+  padding-bottom: 20px; */
+  color: #464646;
+}
+
+/* .hr1 {
+  margin: 0 auto;
+  width: 40vw;
+  color: #ffbc00;
+  height: 20px;
+} */
+
+#neuro {
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: 29px 29px 57px #d3d3d3, -29px -29px 57px #ededed;
+}
+
+#carouselExampleSlidesOnly {
+  margin: 8px 5px;
+  width: fit-content;
+  height: auto;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+}
+
+#Button {
+  transition: 0.5s;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #6f6f6fce, #4e4e4ece);
+  box-shadow: 11px -11px 22px #cacaca, -11px 11px 22px #f6f6f6;
+}
+
+#Button > a {
+  color: white;
+}
+
+#footer {
+  margin-top: 10px !important;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+#So {
+  color: #ffbc00;
+}
+
+#copyright {
+  color: rgb(74, 74, 74);
+  transition: 0.5s;
+}
+
+#copyright:hover,
+#copyright:active {
+  color: #ffbc00;
+}
+
+#explorer {
+  padding: 0 0;
+}
+
+#gallery {
+  margin-top: 50px !important;
+}
+
+#gallery img {
+  margin-bottom: 25px;
+  border-radius: 4px;
+  max-width: 20%;
+  height: auto;
+  transition: 0.5s;
+}
+
+#gallery img:hover {
+  max-width: 21%;
+  height: auto;
+}
+
+/* #carouselImg {
+  height: 200px;
+} */
+
+#footer a {
+  color: #fff;
+}
+
+@media screen and (max-width: 821px) {
+  #shortText {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .i-item {
+    font-size: 26px;
+  }
+
+  .i-item-2 {
+    justify-content: center;
+  }
+
+  #aboutText {
+    margin-top: 12px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  #btnFoglal {
+    font-size: 15px;
+    height: 50px;
+    width: auto;
+    color: #040404;
+    background-color: rgb(235, 235, 235);
+    transition: 0.4s;
+  }
+
+  #btnRef {
+    font-size: 15px;
+    height: 50px;
+    width: auto;
+    color: #464646;
+    margin-left: 35px;
+    background-color: #ffbc00;
+    transition: 0.8s;
+  }
+
+  #neuro {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  #gallery img {
+    margin-bottom: 20px;
+    max-width: 95%;
+    height: 255px;
+  }
+
+  #gallery {
+    height: auto;
+  }
+
+  #explorer {
+    margin: 2.5px 0;
+  }
+
+  #cttxt {
+    font-size: 14.5px;
+  }
+}
